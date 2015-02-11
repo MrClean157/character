@@ -1261,29 +1261,29 @@ var AbilityModal = React.createClass ({displayName: "AbilityModal",
                 React.createElement(Input, {type: "text", bsStyle: validationStr, onChange: this.handleChange.bind(this, "str"), label: "STR", placeholder: this.props.character['charAbilities']['str']['score'], value: this.state.str})
               ), 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationDex, onChange: this.handleChange.bind(this, "dex"), label: "DEX", placeholder: this.props.character['charAbilities']['dex']['score'], value: this.state.dex})
+                React.createElement(Input, {type: "text", bsStyle: validationDex, onChange: this.handleChange.bind(this, "dex"), label: "DEX", placeholder: this.props.character['charAbilities']['dex']['score'], value: this.state.dex})
               ), 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationCon, onChange: this.handleChange.bind(this, "con"), label: "CON", placeholder: this.props.character['charAbilities']['con']['score'], value: this.state.con})
+                React.createElement(Input, {type: "text", bsStyle: validationCon, onChange: this.handleChange.bind(this, "con"), label: "CON", placeholder: this.props.character['charAbilities']['con']['score'], value: this.state.con})
               )
             ), 
             React.createElement(Row, null, 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationInt, onChange: this.handleChange.bind(this, "int"), label: "INT", placeholder: this.props.character['charAbilities']['int']['score'], value: this.state.int})
+                React.createElement(Input, {type: "text", bsStyle: validationInt, onChange: this.handleChange.bind(this, "int"), label: "INT", placeholder: this.props.character['charAbilities']['int']['score'], value: this.state.int})
               ), 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationWis, onChange: this.handleChange.bind(this, "wis"), label: "WIS", placeholder: this.props.character['charAbilities']['wis']['score'], value: this.state.wis})
+                React.createElement(Input, {type: "text", bsStyle: validationWis, onChange: this.handleChange.bind(this, "wis"), label: "WIS", placeholder: this.props.character['charAbilities']['wis']['score'], value: this.state.wis})
               ), 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationCha, onChange: this.handleChange.bind(this, "cha"), label: "CHA", placeholder: this.props.character['charAbilities']['cha']['score'], value: this.state.cha})
+                React.createElement(Input, {type: "text", bsStyle: validationCha, onChange: this.handleChange.bind(this, "cha"), label: "CHA", placeholder: this.props.character['charAbilities']['cha']['score'], value: this.state.cha})
               )
             ), 
             React.createElement(Row, null, 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationProfBonus, onChange: this.handleChange.bind(this, "profBonus"), label: "Proficiency Bonus", placeholder: this.props.character['charProficiencyBonus']['score'], value: this.state.profBonus})
+                React.createElement(Input, {type: "text", bsStyle: validationProfBonus, onChange: this.handleChange.bind(this, "profBonus"), label: "Proficiency Bonus", placeholder: this.props.character['charProficiencyBonus']['score'], value: this.state.profBonus})
               ), 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationPassPerception, onChange: this.handleChange.bind(this, "passPerception"), label: "Passive Perception", placeholder: this.props.character['charPassivePerception']['score'], value: this.state.passPerception})
+                React.createElement(Input, {type: "text", bsStyle: validationPassPerception, onChange: this.handleChange.bind(this, "passPerception"), label: "Passive Perception", placeholder: this.props.character['charPassivePerception']['score'], value: this.state.passPerception})
               )
             )
           )
