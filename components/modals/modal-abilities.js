@@ -261,10 +261,10 @@ var AbilityModal = React.createClass ({
             </Row>
             <Row>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationProfBonus} onChange={this.handleChange.bind(this, "profBonus")} label="Proficiency Bonus" placeholder={this.props.character['charProficiencyBonus']['score']} value={this.state.profBonus}/>
+                <Input type="text" bsStyle={validationProfBonus} onChange={this.handleChange.bind(this, "profBonus")} label="Proficiency Bonus" placeholder={this.props.character['charProficiencyBonus']['score']} value={this.state.profBonus}/>
               </Col>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationPassPerception} onChange={this.handleChange.bind(this, "passPerception")} label="Passive Perception" placeholder={this.props.character['charPassivePerception']['score']} value={this.state.passPerception}/>
+                <Input type="text" bsStyle={validationPassPerception} onChange={this.handleChange.bind(this, "passPerception")} label="Passive Perception" placeholder={this.props.character['charPassivePerception']['score']} value={this.state.passPerception}/>
               </Col>
             </Row>
           </Input>
