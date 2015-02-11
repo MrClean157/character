@@ -112,7 +112,7 @@ var AbilityModal = React.createClass ({
         return;
       }
       tmp['charAbilities']['wis']['score'] = score;
-      path += '.score.' + this.state.wis;
+      path += '.wis.' + this.state.wis;
     }
 
     if (this.state.cha !== "") {
