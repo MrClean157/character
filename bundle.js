@@ -1258,7 +1258,7 @@ var AbilityModal = React.createClass ({displayName: "AbilityModal",
           React.createElement(Input, null, 
             React.createElement(Row, null, 
               React.createElement(Col, {xs: 4}, 
-                React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationStr, onChange: this.handleChange.bind(this, "str"), label: "STR", placeholder: this.props.character['charAbilities']['str']['score'], value: this.state.str})
+                React.createElement(Input, {type: "text", bsStyle: validationStr, onChange: this.handleChange.bind(this, "str"), label: "STR", placeholder: this.props.character['charAbilities']['str']['score'], value: this.state.str})
               ), 
               React.createElement(Col, {xs: 4}, 
                 React.createElement(Input, {type: "number", min: "0", max: "30", step: "1", bsStyle: validationDex, onChange: this.handleChange.bind(this, "dex"), label: "DEX", placeholder: this.props.character['charAbilities']['dex']['score'], value: this.state.dex})

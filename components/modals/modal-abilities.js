@@ -239,24 +239,24 @@ var AbilityModal = React.createClass ({
           <Input>
             <Row>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationStr} onChange={this.handleChange.bind(this, "str")} label="STR" placeholder={this.props.character['charAbilities']['str']['score']} value={this.state.str}/>
+                <Input type="text" bsStyle={validationStr} onChange={this.handleChange.bind(this, "str")} label="STR" placeholder={this.props.character['charAbilities']['str']['score']} value={this.state.str}/>
               </Col>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationDex} onChange={this.handleChange.bind(this, "dex")} label="DEX" placeholder={this.props.character['charAbilities']['dex']['score']} value={this.state.dex}/>
+                <Input type="text" bsStyle={validationDex} onChange={this.handleChange.bind(this, "dex")} label="DEX" placeholder={this.props.character['charAbilities']['dex']['score']} value={this.state.dex}/>
               </Col>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationCon} onChange={this.handleChange.bind(this, "con")} label="CON" placeholder={this.props.character['charAbilities']['con']['score']} value={this.state.con}/>
+                <Input type="text" bsStyle={validationCon} onChange={this.handleChange.bind(this, "con")} label="CON" placeholder={this.props.character['charAbilities']['con']['score']} value={this.state.con}/>
               </Col>
             </Row>
             <Row>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationInt} onChange={this.handleChange.bind(this, "int")} label="INT" placeholder={this.props.character['charAbilities']['int']['score']} value={this.state.int}/>
+                <Input type="text" bsStyle={validationInt} onChange={this.handleChange.bind(this, "int")} label="INT" placeholder={this.props.character['charAbilities']['int']['score']} value={this.state.int}/>
               </Col>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationWis} onChange={this.handleChange.bind(this, "wis")} label="WIS" placeholder={this.props.character['charAbilities']['wis']['score']} value={this.state.wis}/>
+                <Input type="text" bsStyle={validationWis} onChange={this.handleChange.bind(this, "wis")} label="WIS" placeholder={this.props.character['charAbilities']['wis']['score']} value={this.state.wis}/>
               </Col>
               <Col xs={4}>
-                <Input type="number" min="0" max="30" step="1" bsStyle={validationCha} onChange={this.handleChange.bind(this, "cha")} label="CHA" placeholder={this.props.character['charAbilities']['cha']['score']} value={this.state.cha}/>
+                <Input type="text" bsStyle={validationCha} onChange={this.handleChange.bind(this, "cha")} label="CHA" placeholder={this.props.character['charAbilities']['cha']['score']} value={this.state.cha}/>
               </Col>
             </Row>
             <Row>
