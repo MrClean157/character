@@ -53,6 +53,7 @@ var AbilityModal = React.createClass ({
       // test for NaN first
       tmp['charAbilities']['str']['score'] = str;
       path += '.str.' + this.state.str;
+      tmp['charAbilities']['str']['mod'] = Math.floor((str - 10) / 2);
     }
 
     if (this.state.dex !== "") {
@@ -68,6 +69,7 @@ var AbilityModal = React.createClass ({
       }
       tmp['charAbilities']['dex']['score'] = dex;
       path += '.dex.' + this.state.dex;
+      tmp['charAbilities']['dex']['mod'] = Math.floor((dex - 10) / 2);
     }
 
     if (this.state.con !== "") {
@@ -83,6 +85,7 @@ var AbilityModal = React.createClass ({
       }  
       tmp['charAbilities']['con']['score'] = con;
       path += '.con.' + this.state.con;
+      tmp['charAbilities']['con']['mod'] = Math.floor((con - 10) / 2);
     }
 
     if (this.state.int !== "") {
@@ -98,6 +101,7 @@ var AbilityModal = React.createClass ({
       }
       tmp['charAbilities']['int']['score'] = int;
       path += '.int.' + this.state.int;
+      tmp['charAbilities']['int']['mod'] = Math.floor((int - 10) / 2);
     }
 
     if (this.state.wis !== "") {
@@ -113,6 +117,7 @@ var AbilityModal = React.createClass ({
       }
       tmp['charAbilities']['wis']['score'] = wis;
       path += '.wis.' + this.state.wis;
+      tmp['charAbilities']['wis']['mod'] = Math.floor((wis - 10) / 2);
     }
 
     if (this.state.cha !== "") {
@@ -128,6 +133,7 @@ var AbilityModal = React.createClass ({
       }
       tmp['charAbilities']['cha']['score'] = cha;
       path += '.cha.' + this.state.cha;
+      tmp['charAbilities']['cha']['mod'] = Math.floor((cha - 10) / 2);
     }
 
     // change variables to allow modification of proficiency
