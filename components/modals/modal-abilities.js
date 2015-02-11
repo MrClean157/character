@@ -111,7 +111,7 @@ var AbilityModal = React.createClass ({
         });
         return;
       }
-      tmp['charAbilities']['wis']['score'] = score;
+      tmp['charAbilities']['wis']['score'] = wis;
       path += '.wis.' + this.state.wis;
     }
 
