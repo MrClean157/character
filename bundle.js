@@ -1253,7 +1253,7 @@ var AbilityModal = React.createClass ({displayName: "AbilityModal",
     return (
       React.createElement(Modal, {onRequestHide: this.props.close, title: "Enter Ability Scores"}, 
         React.createElement("div", {className: "modal-body"}, 
-          React.createElement("p", null, "Enter values for yor ability scores, proficiency bonus, and passive perception. If a field is left blank and no new values are entered, nothing will be changed."), 
+          React.createElement("p", null, "Enter values for your ability scores, proficiency bonus, and passive perception. If a field is left blank and no new values are entered, nothing will be changed."), 
           alert, 
           React.createElement(Input, null, 
             React.createElement(Row, null, 
