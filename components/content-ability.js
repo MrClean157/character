@@ -1,4 +1,6 @@
 var React = require('react');
+var ModalAbilities = require('./modals/modal-abilities');
+
 var Glyphicon = require('react-bootstrap/Glyphicon');
 var Accordion = require('react-bootstrap/Accordion');
 var Panel = require('react-bootstrap/Panel');
@@ -9,9 +11,32 @@ var Col = require('react-bootstrap/Col');
 var Popover = require('react-bootstrap/Popover');
 var Modal = require('react-bootstrap/Modal');
 var Button = require('react-bootstrap/Button');
+var OverlayMixin = require('react-bootstrap/OverlayMixin');
 
 var Ability = React.createClass({
   displayName : "CharAbility",
+  mixins : [OverlayMixin],
+  getInitialState : function() {
+    return ({
+      abilities : false,
+      skills : false
+    });
+  },
+
+  handleToggle : function(cmp) {
+    var state = {};
+    state[cmp] = !this.state[cmp];
+    this.setState(state);
+  },
+
+  renderOverlay : function() {
+    if (this.state.abilities) {
+      return (<ModalAbilities character={this.props.character} edit={this.props.edit} close={this.handleToggle.bind(this, "abilities")}/>);
+    }
+
+    return <span />;
+  },
+
   render : function() {
 
     var skills = [];
@@ -35,7 +60,7 @@ var Ability = React.createClass({
 
     return (
       <div className="container-fluid">
-        <h3>{"Ability Scores"} <Button className="no-border"><Glyphicon glyph="cog"/></Button></h3>
+        <h3>{"Ability Scores"} <Button className="no-border" onClick={this.handleToggle.bind(this, "abilities")}><Glyphicon glyph="cog"/></Button></h3>
 
         <Panel>
           <Grid fluid className="text-center">
