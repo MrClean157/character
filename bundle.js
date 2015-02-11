@@ -1155,10 +1155,6 @@ var AbilityModal = React.createClass ({displayName: "AbilityModal",
       tmp['charAbilities']['cha']['mod'] = Math.floor((cha - 10) / 2);
     }
 
-    // change variables to allow modification of proficiency
-    // check for NaN, alert if NaN is true
-    var path = "charProficiencyBonus"
-
     if (this.state.profBonus !== "") {
       var profBonus = parseInt(this.state.profBonus,10);
 
@@ -1173,9 +1169,6 @@ var AbilityModal = React.createClass ({displayName: "AbilityModal",
       tmp['charProficiencyBonus']['score'] = profBonus;
       path += '.profBonus.' + this.state.profBonus;
     } 
-
-    // change path to passive perception, and check for NaN
-    var path = "charPassivePerception"
 
     if (this.state.passPerception !== "") {
       var passPerception = parseInt(this.state.passPerception,10);
